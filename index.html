@@ -166,6 +166,32 @@
             color: #888;
             font-size: 0.9rem;
         }
+     .sub-points {
+    font-size: 0.85rem;
+    color: #555;
+    padding-left: 18px;
+    margin: 10px 0;
+    list-style-type: circle;
+}
+
+.progress-container {
+    background-color: #eee;
+    border-radius: 10px;
+    margin-top: 15px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #1a2a6c, #ffb22f);
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 8px;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 12px;
+} 
     </style>
 </head>
 <body>
@@ -211,36 +237,46 @@
         </div>
     </div>
 
-<h2 class="section-title"><i class="fas fa-stethoscope"></i> វិទ្យាសាស្ត្រវេជ្ជសាស្ត្រ និងការស្រាវជ្រាវគ្លីនិក</h2>
+<h2 class="section-title"><i class="fas fa-microscope"></i> វិទ្យាសាស្ត្រវេជ្ជសាស្ត្រ និងការស្រាវជ្រាវកម្រិតខ្ពស់</h2>
 <div class="skills-grid">
     <div class="skill-card">
         <h3><i class="fas fa-dna"></i> Molecular Cytology</h3>
-        <p>ការសិក្សាស៊ីជម្រៅលើហ្សែន (DNA) និងដំណើរការនៃកោសិកាថ្នាក់ម៉ូលេគុល រួមទាំងយន្តការបំបែកខ្លួន Mitosis និង Meiosis ដើម្បីយល់ពីការវិវត្តនៃជាលិកា និងជំងឺតំណពូជ។</p>
+        <p>ការសិក្សាស៊ីជម្រៅលើហ្សែន (DNA) និងដំណើរការនៃកោសិកាថ្នាក់ម៉ូលេគុល។</p>
+        <ul class="sub-points">
+            <li>ការវិភាគលើ DNA Replication និង Protein Synthesis</li>
+            <li>យន្តការបំបែកខ្លួន Mitosis & Meiosis និងជំងឺតំណពូជ</li>
+        </ul>
+        <div class="progress-container"><div class="progress-bar" style="width: 90%;">90%</div></div>
     </div>
 
     <div class="skill-card">
         <h3><i class="fas fa-heartbeat"></i> Advanced Physiology</h3>
-        <p>ការវិភាគលើមុខងារស្មុគស្មាញនៃប្រព័ន្ធសរីរាង្គមនុស្ស រួមមានប្រព័ន្ធសរសៃប្រសាទកណ្ដាល (CNS) និងប្រព័ន្ធសរសៃឈាមបេះដូង (Cardiovascular System) ព្រមទាំងយន្តការមេតាបូលីសក្នុងរាងកាយ។</p>
+        <p>ការវិភាគលើមុខងារស្មុគស្មាញនៃប្រព័ន្ធសរីរាង្គមនុស្ស និងយន្តការមេតាបូលីស។</p>
+        <ul class="sub-points">
+            <li>Central Nervous System (CNS) និងប្រព័ន្ធសរសៃឈាមបេះដូង</li>
+            <li>Homeostasis និងតុល្យភាពអេឡិចត្រូលីតក្នុងរាងកាយ</li>
+        </ul>
+        <div class="progress-container"><div class="progress-bar" style="width: 85%;">85%</div></div>
     </div>
 
     <div class="skill-card">
-        <h3><i class="fas fa-bacteria"></i> Clinical Microbiology</h3>
-        <p>ការស្រាវជ្រាវលើភ្នាក់ងារបង្កជំងឺ (Pathogens) ដូចជាបាក់តេរី និងវីរុស ព្រមទាំងការសិក្សាពីប្រព័ន្ធភាពស៊ាំ (Immunology) ក្នុងការបង្កើតអង្គបដិប្រាណ (Antibodies) ដើម្បីការពាររាងកាយ។</p>
+        <h3><i class="fas fa-vial"></i> Clinical Microbiology</h3>
+        <p>ការស្រាវជ្រាវលើភ្នាក់ងារបង្កជំងឺ និងយន្តការឆ្លើយតបនៃប្រព័ន្ធភាពស៊ាំ។</p>
+        <ul class="sub-points">
+            <li>ការចាត់ថ្នាក់បាក់តេរី វីរុស និងបរាសិតវិទ្យា</li>
+            <li>Immunology: ការបង្កើត Antibodies និងយន្តការការពាររាងកាយ</li>
+        </ul>
+        <div class="progress-container"><div class="progress-bar" style="width: 80%;">80%</div></div>
     </div>
 
     <div class="skill-card">
-        <h3><i class="fas fa-pills"></i> Pharmacodynamics</h3>
-        <p>មូលដ្ឋានគ្រឹះនៃឱសថសាស្ត្រ ការយល់ដឹងពីរបៀបដែលសារធាតុគីមីមានអន្តរកម្មជាមួយកោសិកាក្នុងរាងកាយ និងយន្តការដែលឱសថជួយក្នុងការព្យាបាល និងស្ដារសុខភាពឡើងវិញ។</p>
-    </div>
-
-    <div class="skill-card">
-        <h3><i class="fas fa-notes-medical"></i> Clinical Diagnostics</h3>
-        <p>ការសិក្សាពីបច្ចេកទេសពិនិត្យរោគវិនិច្ឆ័យបឋម ការតាមដានសញ្ញាជីវជាតិ (Vital Signs) និងការបកស្រាយលទ្ធផលពិសោធន៍វេជ្ជសាស្ត្រ ដើម្បីកំណត់ស្ថានភាពសុខភាពអ្នកជំងឺឱ្យបានច្បាស់លាស់។</p>
-    </div>
-
-    <div class="skill-card">
-        <h3><i class="fas fa-balance-scale-left"></i> Bioethics</h3>
-        <p>ការយល់ដឹងពីក្រមសីលធម៌ និងវិជ្ជាជីវៈវេជ្ជសាស្ត្រ ការគោរពសិទ្ធិអ្នកជំងឺ និងការប្រកាន់ខ្ជាប់នូវគោលការណ៍ "មេត្តាធម៌" ក្នុងនាមជាអ្នកបម្រើក្នុងវិស័យសុខាភិបាល។</p>
+        <h3><i class="fas fa-user-md"></i> Medical Ethics & Ethics</h3>
+        <p>ការប្រកាន់ខ្ជាប់នូវក្រមសីលធម៌វិជ្ជាជីវៈ និងការផ្ដល់សេវាថែទាំដោយក្ដីមេត្តា។</p>
+        <ul class="sub-points">
+            <li>Bioethics: ការគោរពសិទ្ធិ និងការរក្សាសម្ងាត់របស់អ្នកជំងឺ</li>
+            <li>ជំនាញទំនាក់ទំនងក្នុងវិស័យសុខាភិបាល និងវិជ្ជាជីវៈពេទ្យ</li>
+        </ul>
+        <div class="progress-container"><div class="progress-bar" style="width: 95%;">95%</div></div>
     </div>
 </div>
  
