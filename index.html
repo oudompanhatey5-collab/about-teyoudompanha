@@ -192,6 +192,44 @@
     padding-right: 5px;
     line-height: 12px;
 } 
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1a2a6c;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.contact-card i {
+    font-size: 1.5rem;
+    color: #ffb22f;
+}
+
+.contact-card:hover {
+    background: #1a2a6c;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.contact-card:hover i {
+    color: white;
+}
+   
     </style>
 </head>
 <body>
@@ -337,8 +375,26 @@
     </div>
 </div>
 
+<h2 class="section-title"><i class="fas fa-envelope"></i> ព័ត៌មានទំនាក់ទំនង</h2>
+<div class="contact-grid">
+    <a href="mailto:oudompanhatey@gmail.com" class="contact-card">
+        <i class="fas fa-envelope-open-text"></i>
+        <span>oudompanhatey@gmail.com</span>
+    </a>
+
+    <a href="https://t.me/Mr_OudomPanha" target="_blank" class="contact-card">
+        <i class="fab fa-telegram"></i>
+        <span>@Mr_OudomPanha</span>
+    </a>
+
+    <a href="https://github.com/oudompanhatey5-collab" target="_blank" class="contact-card">
+        <i class="fab fa-github"></i>
+        <span>GitHub Profile</span>
+    </a>
+</div>
+ 
 <footer>
-    <p>&copy; ២០២៦ រក្សាសិទ្ធិដោយ Google</p>
+    <p>&copy; ២០២៦ រក្សាសិទ្ធិដោយ Tey OudomPanha</p>
 </footer>
 
 </body>
