@@ -388,9 +388,40 @@
     </a>
 </div>
  
+ <div class="music-player">
+    <button id="music-btn" onclick="toggleMusic()">
+        <i class="fas fa-play" id="music-icon"></i> 
+        <span id="music-status">Play Music</span>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="https://www.chosic.com/wp-content/uploads/2021/07/Rainy-Day-Chill-Lofi.mp3" type="audio/mpeg">
+    </audio>
+ </div>
+ 
 <footer>
     <p>&copy; ២០២៦ រក្សាសិទ្ធិដោយ Tey OudomPanha</p>
 </footer>
+
+ <script>
+    const music = document.getElementById("bg-music");
+    const btn = document.getElementById("music-btn");
+    const icon = document.getElementById("music-icon");
+    const status = document.getElementById("music-status");
+
+    function toggleMusic() {
+        if (music.paused) {
+            music.play();
+            status.innerText = "Playing...";
+            icon.className = "fas fa-pause";
+            btn.classList.add("playing");
+        } else {
+            music.pause();
+            status.innerText = "Play Music";
+            icon.className = "fas fa-play";
+            btn.classList.remove("playing");
+        }
+    }
+</script>
 
 </body>
 </html>
