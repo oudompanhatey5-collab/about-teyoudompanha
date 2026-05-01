@@ -229,7 +229,34 @@
 .contact-card:hover i {
     color: white;
 }
-   
+.music-player {
+    position: fixed;
+    top: 20px;    /* កំណត់ឱ្យនៅផ្នែកខាងលើ */
+    right: 20px;  /* កំណត់ឱ្យនៅផ្នែកខាងស្តាំ */
+    z-index: 1000;
+}
+
+#music-btn {
+    background: rgba(26, 42, 108, 0.85); /* ពណ៌ខៀវថ្លា */
+    backdrop-filter: blur(5px);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+    font-family: 'Khmer OS Battambang', sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#music-btn:hover {
+    background: #ffb22f; /* ប្តូរជាពណ៌លឿងទុំពេល Hover */
+    transform: scale(1.05);
+}
+     
     </style>
 </head>
 <body>
@@ -387,18 +414,18 @@
         <span>@Mr_OudomPanha</span>
     </a>
 </div>
- 
  <div class="music-player">
     <button id="music-btn" onclick="toggleMusic()">
-        <i class="fas fa-play" id="music-icon"></i> 
-        <span id="music-status">Play Music</span>
+        <i class="fas fa-volume-up" id="music-icon"></i> 
+        <span id="music-status">Play Sound</span>
     </button>
     <audio id="bg-music" loop>
-        <source src="https://www.chosic.com/wp-content/uploads/2021/07/Rainy-Day-Chill-Lofi.mp3" type="audio/mpeg">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
     </audio>
  </div>
  
-<footer>
+ </div>
+ <footer>
     <p>&copy; ២០២៦ រក្សាសិទ្ធិដោយ Tey OudomPanha</p>
 </footer>
 
