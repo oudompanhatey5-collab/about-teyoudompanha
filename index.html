@@ -231,11 +231,26 @@
 }
 .music-player {
     position: fixed;
-    top: 20px;    /* កំណត់ឱ្យនៅផ្នែកខាងលើ */
-    right: 20px;  /* កំណត់ឱ្យនៅផ្នែកខាងស្តាំ */
+    top: 20px;
+    right: 20px;
     z-index: 1000;
 }
 
+#music-btn {
+    background: #ffb22f; /* ពណ៌លឿងទុំឱ្យលេចធ្លោលើផ្ទៃខៀវ */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    font-family: 'Khmer OS Battambang', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+}
+    
 #music-btn {
     background: rgba(26, 42, 108, 0.85); /* ពណ៌ខៀវថ្លា */
     backdrop-filter: blur(5px);
@@ -423,7 +438,17 @@
         allowfullscreen style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
     </iframe>
     </div>
- 
+
+  <div class="music-player">
+    <button id="music-btn" onclick="toggleMusic()">
+        <i class="fas fa-play" id="music-icon"></i> 
+        <span id="music-status">ចាក់បទ Stay With Me</span>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="https://www.chosic.com/wp-content/uploads/2021/07/Rainy-Day-Chill-Lofi.mp3" type="audio/mpeg">
+    </audio>
+ </div>
+  
  </div>
  <footer>
     <p>&copy; ២០២៦ រក្សាសិទ្ធិដោយ Tey OudomPanha</p>
@@ -438,14 +463,12 @@
     function toggleMusic() {
         if (music.paused) {
             music.play();
-            status.innerText = "Playing...";
+            status.innerText = "កំពុងចាក់...";
             icon.className = "fas fa-pause";
-            btn.classList.add("playing");
         } else {
             music.pause();
-            status.innerText = "Play Music";
+            status.innerText = "ចាក់បទ Stay With Me";
             icon.className = "fas fa-play";
-            btn.classList.remove("playing");
         }
     }
 </script>
